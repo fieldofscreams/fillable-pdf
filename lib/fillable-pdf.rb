@@ -185,6 +185,10 @@ class FillablePDF
     @pdf_doc.isClosed
   end
 
+  def output
+    @byte_stream.toByteArray
+  end
+
   private
 
   ##
